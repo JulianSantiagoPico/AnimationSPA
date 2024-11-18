@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* Navbar fijo */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Centrado vertical y horizontal para el contenedor de la tarjeta */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Estilo del card para login */
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100dvw;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+/* Animaciones */
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
